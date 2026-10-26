@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "celeryman"
+version = "0.1.0"
+description = "Load up Celery Man, please. A terminal toy."
+requires-python = ">=3.10"
+dependencies = ["textual>=8.0"]
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-asyncio"]
+
+[project.scripts]
+celeryman = "celeryman.app:main"
+
+[tool.setuptools.packages.find]
+include = ["celeryman*"]
+
+[tool.setuptools.package-data]
+celeryman = ["*.tcss"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"

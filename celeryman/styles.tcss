@@ -1,0 +1,204 @@
+Screen {
+    background: #3fa7d6;
+}
+
+#desktop {
+    width: 100%;
+    height: 100%;
+}
+
+/* -- window chrome ---------------------------------------------------- */
+
+.retro-window {
+    position: absolute;
+    layout: vertical;
+    background: #d4d0c8;
+    border: solid #3c3c3c;
+}
+
+.titlebar {
+    height: 1;
+    background: #c0c0c0;
+}
+
+.titlebar .menubox {
+    width: 3;
+    background: #a8a8a8;
+    color: #1c1c1c;
+}
+
+.titlebar .title {
+    width: 1fr;
+    padding: 0 1;
+    color: #1c1c1c;
+    text-style: bold;
+}
+
+.titlebar .close {
+    width: 7;
+    background: #e8e8e8;
+    color: #1c1c1c;
+}
+
+.titlebar .close:hover {
+    background: #ffffff;
+}
+
+.titlebar .arrows {
+    width: 2;
+    color: #1c1c1c;
+}
+
+.retro-window.-active .titlebar {
+    background: #000080;
+}
+
+.retro-window.-active .titlebar .title,
+.retro-window.-active .titlebar .arrows {
+    color: #ffffff;
+}
+
+.label {
+    height: 1;
+    padding: 0 1;
+    background: #f0f0f0;
+    color: #1c1c1c;
+}
+
+.sprite {
+    width: 100%;
+    height: 1fr;
+    content-align: center middle;
+}
+
+/* -- Paul's COMPUTER --------------------------------------------------- */
+
+#console {
+    width: 48;
+    height: 8;
+}
+
+.console-body {
+    height: 1fr;
+    background: #000000;
+}
+
+.console-log {
+    height: 1fr;
+    padding: 0 1;
+    background: #000000;
+}
+
+#command,
+#command:focus {
+    height: 1;
+    border: none;
+    padding: 0 1;
+    background: #c0c0c0;
+    color: #1c1c1c;
+}
+
+/* -- splash ------------------------------------------------------------ */
+
+SplashBody {
+    height: 1fr;
+    align: center top;
+    background: #f4f4f4;
+}
+
+.splash-art {
+    width: 100%;
+    height: 9;
+    padding: 1 0;
+    content-align: center middle;
+    background: #ffaf00;
+}
+
+.splash-title {
+    width: 100%;
+    height: 2;
+    padding: 1 0 0 0;
+    content-align: center top;
+    color: #1c1c1c;
+    text-style: bold;
+}
+
+SplashBody ProgressBar,
+LoadingBody ProgressBar {
+    width: 32;
+    margin: 1 0 0 0;
+}
+
+.splash-wait {
+    width: 100%;
+    margin: 1 0 0 0;
+    content-align: center top;
+    color: #1c1c1c;
+}
+
+/* -- dialogs ----------------------------------------------------------- */
+
+.beta-terminal {
+    height: 1fr;
+    padding: 1 2;
+    background: #000000;
+}
+
+.loading-body {
+    height: 1fr;
+    padding: 1 2;
+    align: center middle;
+    background: #f4f4f4;
+}
+
+.loading-message {
+    width: 100%;
+    content-align: center middle;
+    color: #1c1c1c;
+}
+
+IncomingCallBody {
+    height: 1fr;
+    background: #f4f4f4;
+}
+
+.led {
+    height: 3;
+    margin: 1 2 0 2;
+    content-align: center middle;
+    background: #000000;
+}
+
+.wife {
+    height: 1fr;
+    margin: 1 2 1 2;
+    content-align: center middle;
+    background: #c2185b;
+}
+
+.error-body,
+.nsfw-body {
+    width: 100%;
+    height: 1fr;
+    content-align: center middle;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+CensoredBody {
+    width: 100%;
+    height: 1fr;
+}
+
+.printer-body {
+    height: 1fr;
+    padding: 0 1;
+    content-align: center top;
+    background: #ffffff;
+}
+
+.help-body {
+    height: 1fr;
+    padding: 1 2;
+    background: #fffff4;
+}
